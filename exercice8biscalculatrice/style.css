@@ -1,0 +1,89 @@
+*{
+    /* resets globaux */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    /* on utilise toute la largeur possible */
+    max-width: 100vw;
+    /* on utilise toute la hauteur possible */
+    height: 100vh;
+    /* mise des éléments en colonne */
+    display: flex;
+    justify-content: center;
+    /* aic + enter */
+    align-items: center;
+    font-family: sans-serif;
+    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+}
+h1{
+    color: #f7f7f7;
+    background-color: rgb(97, 92, 92);
+    text-align: center;
+    margin-bottom: 10px;
+}
+.calculatrice{
+   
+    
+    background-color: gray; 
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 5px greenyellow;
+
+
+}
+.ecran{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(198, 237, 255);
+    margin-bottom: 10px;
+    /* coins arrondis */
+    border-radius: 5px;
+    /* mise des éléments en colonne */
+    display: flex;
+    /* aligner les éléments en bas à droite */
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 5px;
+    font-size: 25px;
+
+}
+.touches{
+    display: grid;
+    /* création de 4 colonnes de 50 pixels verticales */
+    grid-template-columns: repeat(4, 50px);
+    /* création de 5 colonnes de 50 pixels horizontales */
+    grid-template-rows: repeat(5, 50px);
+    /* espacement entre les touches */
+    grid-gap: 7px;
+    color: aliceblue;
+}
+button{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    box-shadow: 0 4px #a8a8a8;
+    font-size: 18px;
+
+}
+button:active{
+
+    box-shadow: 0 1px #a8a8a8;
+    transform: translateY(2px);
+}
+button[data-key="8"]{
+    background-color: #f9900f;
+    font-weight: bold;
+    color: white;
+}
+button[data-key="13"]{
+    grid-column: span 2;
+    background-color: #36e700;
+    font-weight: bold;
+    color: white;
+    font-size: 35px;
+}

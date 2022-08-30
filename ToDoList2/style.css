@@ -1,0 +1,95 @@
+/* reset */
+*, ::before, ::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #333;
+    color: #f1f1f1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    /* 5% de la largeur totale de l' écran */
+    font-size: 5vw;
+    margin: 50px 0;
+    color: crimson;
+}
+
+form {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    max-width: 1200px;
+    min-width: 400px;
+}
+form label {
+    /* de base c' est un inline et on veut que ça pousse l' input en dessous */
+    display: block;
+    font-size: 25px;
+}
+form input {
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+    /* margin 10px en haut et en bas, 0px à dte et à gche  */
+    margin: 10px 0;
+}
+.input text{
+    color: crimson;
+}
+form button {
+    padding: 15px;
+    font-size: 20px;
+    color:  rgb(67, 119, 16);
+}
+.liste-todo {
+    list-style-type: none;
+    /* margin 20px en haut et en bas, auto à droite et gauche, et 0 en bas */
+    margin: 20px auto 0;
+    width: 70%;
+    max-width: 1200px;
+    min-width: 400px;
+}
+li {
+    font-size: 20px;
+    width: 100%;
+    background: #f1f1f1;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    color: #333;
+    margin: 5px 0;
+}
+li input {
+    width: 40px;
+    height: 40px;
+    margin-left: 15px;
+   
+   
+}
+li button {
+    margin-left: auto;
+    padding: 5px;
+}
+button img {
+    width: 40px;
+    /* Avec le pointeur de la souris, ignore l' image  */
+    pointer-events: none;
+
+}
+li span {
+    font-size: 25px;
+    margin-left: 20px;
+    color: crimson;
+}
+   /* animation rayures */
+   
+   li.finDeTache span {
+    /* met une ligne à travers quand la tâche est accomplie*/
+    text-decoration: line-through;
+    color:  rgb(67, 119, 16);
+   }

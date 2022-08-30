@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Créer l'interface en HTML -->
+
+    <h1>To Do List J.S.</h1>
+
+    <!-- on n' envoie pas les données vers une autre page donc "form" simple -->
+    <form>
+        <label for="item"> Veuillez entrer une tâche </label>
+
+        <!-- si on clique sur le label, ça ira dans notre input -->
+        <input type="text" id="item" placeholder="Veuillez entrer une tâche">
+
+        <!-- le bouton sert a envoyer le formulaire -->
+        <button type="submit">Valider</button>
+    </form>
+
+    <ul class="liste-todo">
+    </ul>
+    <script src="script.js"></script>
+</body>
+</html>
